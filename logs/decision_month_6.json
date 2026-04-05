@@ -1,0 +1,12 @@
+{
+  "month": 6,
+  "active_model": "v1.0.0",
+  "drift_detected": true,
+  "retrain_decision": true,
+  "retrain_reason": "Concept drift detected (accuracy drop=0.143, ADWIN triggered)",
+  "deploy_decision": false,
+  "deploy_reason": "New model NOT better enough: AUC 0.9987\u21920.9570, F1 0.9712\u21920.9030 (required improvement: 0.01)",
+  "new_version": "v101.0.0",
+  "outcome": "REJECTED",
+  "timestamp": "2026-04-05T04:45:10.083822"
+}

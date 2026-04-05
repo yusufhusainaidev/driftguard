@@ -1,0 +1,44 @@
+{
+  "version": "v101.0.0",
+  "features": [
+    "num_dependents",
+    "education",
+    "self_employed",
+    "income_annum",
+    "loan_amount",
+    "loan_term",
+    "cibil_score",
+    "residential_assets",
+    "commercial_assets",
+    "luxury_assets",
+    "bank_assets"
+  ],
+  "target": "default_label",
+  "metrics": {
+    "accuracy": 0.9251,
+    "f1_score": 0.903,
+    "auc_roc": 0.957
+  },
+  "training_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "xgboost_params": {
+    "n_estimators": 300,
+    "max_depth": 5,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "min_child_weight": 3,
+    "gamma": 0.1,
+    "eval_metric": "logloss",
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "status": "rejected",
+  "trained_at": "2026-04-05T04:45:11.373189"
+}

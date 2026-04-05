@@ -1,0 +1,125 @@
+{
+  "month": 4,
+  "batch_date": "2024-04-01",
+  "batch_size": 711,
+  "actual_drift_injected": "none",
+  "psi_results": {
+    "num_dependents": {
+      "psi": 0.034,
+      "severity": "none",
+      "drifted": false
+    },
+    "income_annum": {
+      "psi": 0.0199,
+      "severity": "none",
+      "drifted": false
+    },
+    "loan_amount": {
+      "psi": 0.0093,
+      "severity": "none",
+      "drifted": false
+    },
+    "loan_term": {
+      "psi": 0.0222,
+      "severity": "none",
+      "drifted": false
+    },
+    "cibil_score": {
+      "psi": 0.0178,
+      "severity": "none",
+      "drifted": false
+    },
+    "residential_assets": {
+      "psi": 0.0193,
+      "severity": "none",
+      "drifted": false
+    },
+    "commercial_assets": {
+      "psi": 0.0158,
+      "severity": "none",
+      "drifted": false
+    },
+    "luxury_assets": {
+      "psi": 0.0076,
+      "severity": "none",
+      "drifted": false
+    },
+    "bank_assets": {
+      "psi": 0.0124,
+      "severity": "none",
+      "drifted": false
+    }
+  },
+  "ks_results": {
+    "num_dependents": {
+      "ks_statistic": 0.0823,
+      "p_value": 0.003192,
+      "drifted": true
+    },
+    "income_annum": {
+      "ks_statistic": 0.0352,
+      "p_value": 0.597094,
+      "drifted": false
+    },
+    "loan_amount": {
+      "ks_statistic": 0.0373,
+      "p_value": 0.521753,
+      "drifted": false
+    },
+    "loan_term": {
+      "ks_statistic": 0.0591,
+      "p_value": 0.0722,
+      "drifted": false
+    },
+    "cibil_score": {
+      "ks_statistic": 0.0429,
+      "p_value": 0.344489,
+      "drifted": false
+    },
+    "residential_assets": {
+      "ks_statistic": 0.0345,
+      "p_value": 0.622775,
+      "drifted": false
+    },
+    "commercial_assets": {
+      "ks_statistic": 0.0422,
+      "p_value": 0.364303,
+      "drifted": false
+    },
+    "luxury_assets": {
+      "ks_statistic": 0.0253,
+      "p_value": 0.919244,
+      "drifted": false
+    },
+    "bank_assets": {
+      "ks_statistic": 0.0408,
+      "p_value": 0.406064,
+      "drifted": false
+    }
+  },
+  "concept_drift": {
+    "accuracy_check": {
+      "baseline_accuracy": 0.9789,
+      "current_accuracy": 0.9761,
+      "accuracy_drop": 0.0028,
+      "drifted": false,
+      "severity": "none"
+    },
+    "adwin_result": {
+      "adwin_drift_detected": false,
+      "drift_points": [],
+      "final_error_rate": 0.0239,
+      "window_size": 711
+    }
+  },
+  "drifted_features_psi": [],
+  "drifted_features_ks": [
+    "num_dependents"
+  ],
+  "max_psi": 0.034,
+  "data_drift_detected": false,
+  "concept_drift_detected": false,
+  "any_drift_detected": false,
+  "trigger_retrain": false,
+  "detected_at": "2026-04-05T04:44:56.286948"
+}

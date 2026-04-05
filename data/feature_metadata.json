@@ -1,0 +1,43 @@
+{
+  "features": [
+    "num_dependents",
+    "education",
+    "self_employed",
+    "income_annum",
+    "loan_amount",
+    "loan_term",
+    "cibil_score",
+    "residential_assets",
+    "commercial_assets",
+    "luxury_assets",
+    "bank_assets"
+  ],
+  "target": "default_label",
+  "categorical": [
+    "education",
+    "self_employed"
+  ],
+  "numeric": [
+    "num_dependents",
+    "income_annum",
+    "loan_amount",
+    "loan_term",
+    "cibil_score",
+    "residential_assets",
+    "commercial_assets",
+    "luxury_assets",
+    "bank_assets"
+  ],
+  "source_files": [
+    "loan_approval_dataset.csv",
+    "BankChurners.csv"
+  ],
+  "drift_schedule": {
+    "month_1": "none",
+    "month_2": "none",
+    "month_3": "data_drift",
+    "month_4": "none",
+    "month_5": "concept_drift",
+    "month_6": "concept_drift"
+  }
+}
