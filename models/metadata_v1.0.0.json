@@ -1,0 +1,55 @@
+{
+  "version": "v1.0.0",
+  "features": [
+    "num_dependents",
+    "education",
+    "self_employed",
+    "income_annum",
+    "loan_amount",
+    "loan_term",
+    "cibil_score",
+    "residential_assets",
+    "commercial_assets",
+    "luxury_assets",
+    "bank_assets"
+  ],
+  "target": "default_label",
+  "metrics": {
+    "accuracy": 0.9789,
+    "precision": 0.9902,
+    "recall": 0.9528,
+    "f1_score": 0.9712,
+    "auc_roc": 0.9984
+  },
+  "cv_auc_roc": 0.9959606880593492,
+  "shap_importance": {
+    "cibil_score": 4.765565872192383,
+    "loan_term": 1.5394043922424316,
+    "residential_assets": 0.4183328151702881,
+    "loan_amount": 0.4007610082626343,
+    "commercial_assets": 0.3703838884830475,
+    "income_annum": 0.32781746983528137,
+    "luxury_assets": 0.3143906593322754,
+    "bank_assets": 0.12685951590538025,
+    "education": 0.11386187374591827,
+    "num_dependents": 0.07420794665813446,
+    "self_employed": 0.016087565571069717
+  },
+  "baseline_files": [
+    "month_1.csv",
+    "month_2.csv"
+  ],
+  "xgboost_params": {
+    "n_estimators": 300,
+    "max_depth": 5,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "min_child_weight": 3,
+    "gamma": 0.1,
+    "eval_metric": "logloss",
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "status": "active"
+}

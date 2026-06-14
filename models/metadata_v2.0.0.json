@@ -1,0 +1,45 @@
+{
+  "version": "v2.0.0",
+  "features": [
+    "num_dependents",
+    "education",
+    "self_employed",
+    "income_annum",
+    "loan_amount",
+    "loan_term",
+    "cibil_score",
+    "residential_assets",
+    "commercial_assets",
+    "luxury_assets",
+    "bank_assets"
+  ],
+  "target": "default_label",
+  "metrics": {
+    "accuracy": 0.92,
+    "f1_score": 0.8987,
+    "auc_roc": 0.9691
+  },
+  "old_metrics": {
+    "accuracy": 0.9789,
+    "precision": 0.9902,
+    "recall": 0.9528,
+    "f1_score": 0.9712,
+    "auc_roc": 0.9984
+  },
+  "trigger_month": 3,
+  "rl_action": "partial",
+  "xgboost_params": {
+    "n_estimators": 300,
+    "max_depth": 5,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "min_child_weight": 3,
+    "gamma": 0.1,
+    "eval_metric": "logloss",
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "status": "candidate",
+  "trained_at": "2026-05-13T10:47:59.084216"
+}
